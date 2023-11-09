@@ -167,7 +167,9 @@
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Cards</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <listViewButtons>Study_List_View</listViewButtons>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

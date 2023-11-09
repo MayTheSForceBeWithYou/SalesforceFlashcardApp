@@ -12,6 +12,8 @@
     <label>Flashcards</label>
     <navType>Standard</navType>
     <tabs>Card__c</tabs>
+    <tabs>Deck__c</tabs>
+    <tabs>Study_List_View</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Flashcards_UtilityBar</utilityBar>
 </CustomApplication>

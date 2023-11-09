@@ -52,4 +52,8 @@
         <tab>Deck__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
+    <tabSettings>
+        <tab>Study_List_View</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
 </PermissionSet>
