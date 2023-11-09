@@ -1,7 +1,19 @@
 <template>
-    <lightning-card lwc:if={cardText}>
+    <!--lightning-card lwc:if={cardText}>
         <div class="flashcard" onclick={handleCardClick}>
             <div>{cardText}</div>
         </div>
-    </lightning-card>
+    </lightning-card-->
+    <div if:true={card}>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+               <div class="flip-card-front">
+                    <div>{cardQuestion}</div>
+                </div>
+                <div class="flip-card-back">
+                    <div>{cardAnswer}</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>

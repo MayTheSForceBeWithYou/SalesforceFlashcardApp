@@ -1,0 +1,16 @@
+<apex:page standardController="Card__c" showHeader="false" sidebar="false">
+    <apex:includeLightning />    
+    <div id="auraPlaceholder"></div>
+    <script>
+        console.log("{!card__c.Id}");
+    $Lightning.use("c:cardPanelAuraApp", () => {
+        $Lightning.createComponent("c:cardPanel",
+            {"recordId": "{!card__c.Id}"},
+            "auraPlaceholder",
+            (cmp) => {
+                console.log('LWC Componenet added in VF page');
+            }
+        );
+    });
+    </script>
+</apex:page>
