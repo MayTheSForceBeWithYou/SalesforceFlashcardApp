@@ -1,7 +1,7 @@
 <template>
     <lightning-card lwc:if={cardText}>
         <div class="flashcard" onclick={handleCardClick}>
-            <lightning-formatted-rich-text value={cardText}></lightning-formatted-rich-text>
+            <div>{cardText}</div>
         </div>
     </lightning-card>
 </template>
