@@ -5,7 +5,7 @@ import ANSWER_FIELD from "@salesforce/schema/Card__c.Answer__c";
 
 export default class CardPanel extends LightningElement {
     @api recordId;
-
+    
     @wire(getRecord, { recordId: '$recordId', fields: [QUESTION_FIELD, ANSWER_FIELD] })
     card;
 
@@ -27,6 +27,7 @@ export default class CardPanel extends LightningElement {
         if(this.card) {
             console.log(JSON.stringify(this.card, null, 2));
         }
+        console.log(`this.recordId: ${this.recordId}`);
     }
 
     handleCardClick() {

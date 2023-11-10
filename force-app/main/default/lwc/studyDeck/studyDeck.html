@@ -1,3 +1,16 @@
 <template>
-    <div if:true={recordId}>Record ID: {recordId}</div>
+    <template if:true={deckCards}>
+        <c-card-panel class="slds-align_absolute-center" record-id={currentCard.id}></c-card-panel>
+        <div class="slds-grid slds-gutters">
+            <div class="slds-col slds-align_absolute-center">
+                <lightning-button class="nav-button" label="Back"></lightning-button>
+            </div>
+            <div class="slds-col">
+                <span></span>
+            </div>
+            <div class="slds-col slds-align_absolute-center">
+                <lightning-button class="nav-button" label="Next"></lightning-button>
+            </div>
+        </div>
+    </template>
 </template>
